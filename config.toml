@@ -29,8 +29,8 @@ theme = "aafu"
     # Profile section
     [params.profile]
         name = "Mariela Cortés López"
-		tagline = "PhD Student"
-		location = "Mainz, Germany"
+		    tagline = "PhD Student"
+		    location = "Mainz, Germany"
         photo = "profile.jpg"
 
     # Section for links to social websites
@@ -106,8 +106,8 @@ theme = "aafu"
         icon = "fas fa-graduation-cap"
 
         [[params.education.list]]
-            degree = "Ph.D. in Subject"
-            college = "Institute of Molecular Biology, Mainz. Johannes Gutenberg University of Mainz"
+            degree = "Ph.D. in Biology"
+            college = "Institute of Molecular Biology, Mainz (Julian König's lab). Johannes Gutenberg University of Mainz"
             dates = "2017 - current"
             thesis_title = "Dissecting splicing regulatory networks"
             #thesis_link = "#"
