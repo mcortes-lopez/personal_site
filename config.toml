@@ -1,4 +1,4 @@
-baseURL = "https://www.example.org/"
+baseURL = "https://mcortes-lopez.netlify.app/"
 languageCode = "en-us"
 theme = "aafu"
 
@@ -10,7 +10,7 @@ theme = "aafu"
 
     [params.theme]
         # Available themes are 'light', 'dark', and 'blogdown::serve_site'
-        mainTheme = "light"
+        mainTheme = "dark"
         # setting false below will hide 'aafu by darshan' displayed under the profile pic
         showAttribute = true
         singlePage = false
@@ -71,30 +71,34 @@ theme = "aafu"
     [[params.showInAccordion]]
         item = "project"
     [[params.showInAccordion]]
-        item = "skill"
-    [[params.showInAccordion]]
         item = "hobby"
 
     [params.aboutme]
         title = "About Me"
         icon = "fas fa-user"
-        description = "**Tagline. Lorem ipsum dolor sit amet**, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        description = "I am a PhD student at the IMB, Mainz. I am interested in RNA biology, particulary RNA processing. I have experience analyzing bioinformatic data for diverse proyects, mainly using R. I enjoy to use public availiable data to complement my own research and explore other biological questions."
 
     # Experience section
     [params.experience]
-        title = "Experiences"
-        icon = "fas fa-briefcase"
+        title = "Research Experience"
+        icon = "fas fa-laptop"
 
         [[params.experience.list]]
-            position = "Job Title"
-            dates = "2019 - *Present*"
-            company = "Company Name"
-            details = "Printed from desktop. Sent [emails](#). Called people using telephone. Drank water from office cooler. Ate donuts on people's birthdays."
+            position = "Research Assistant"
+            dates = "2016-2017"
+            company = "Pedro Miura's Lab at University of Nevada, Reno"
+            details = "Scientific technician position, collaborating in RNA related bioinformatics projects."
         [[params.experience.list]]
-            position = "Job Title"
-            dates = "2018 - 2019"
-            link = "#"
-            company = "Company Name"
+            position = "Undergraduate Researcher"
+            dates = "2015-2016"
+            company = "Pedro Miura's Lab at University of Nevada, Reno"
+            details = "Internship and bachelor thesis project. Developing a computational pipeline to analyze RNA-Seq data in order to identify circRNA transcripts. Collaboration in several projects inside the group but also with other groups from UNR (Dr. Alexander van der Linden group) and external (Dr. Brian Johnson from UC Davis and Dr. Joe Chakkalakal from Rochester University)."
+        [[params.experience.list]]
+            position = "Undergraduate Researcher"
+            dates = "2013-2015"
+            company = "Otto Geiger's Lab at Centro de Ciencias Genómicas, Mexico"
+            details = "Project: **Bacteria with a phospholipid methyltransferase activity can synthesize their own choline and glycine betaine**. Training in basic molecular biology and lipidomics skills."
+
 
     # Education section
     [params.education]
@@ -103,20 +107,16 @@ theme = "aafu"
 
         [[params.education.list]]
             degree = "Ph.D. in Subject"
-            college = "University of State-City"
-            dates = "2013 - 2018"
-            thesis_title = "Effect of humans on other humans: a study of human behavior."
-            thesis_link = "#"
+            college = "Institute of Molecular Biology, Mainz. Johannes Gutenberg University of Mainz"
+            dates = "2017 - current"
+            thesis_title = "Dissecting splicing regulatory networks"
+            #thesis_link = "#"
         [[params.education.list]]
-            degree = "M.S. in Subject"
-            college = "University of State-City"
-            dates = "2013 - 2018"
-            thesis_title = "Effect of humans on other humans: a study of human behavior."
-            thesis_link = "#"
-        [[params.education.list]]
-            degree = "B.S. in Subject"
-            college = "University of State-City"
-            dates = "2004 - 2009"
+            degree = "B.S. in Genomics"
+            college = "Universidad Nacional Autónoma de México"
+            dates = "2012 - 2016"
+            thesis_title = "CircRNA accumulation in the aging mouse brain"
+
 
     # Publication section
     [params.publication]
@@ -125,78 +125,64 @@ theme = "aafu"
         #The order below determines the order in which the items appear in "Publications" section
         format = ["date", "authors", "title", "journal"]
         #If you don't want to group publications, comment the line below by adding # at the beginning
-        types = ["Journal Articles", "Proceedings"]
+        types = ["Journal Articles", "Book Chapters", "Reviews"]
 
         [[params.publication.list]]
-            title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            authors = "F Last, F Second, P secondary"
+            title = "Decoding a cancer-relevant splicing decision in the RON proto-oncogene using high-throughput mutagenesis"
+            authors = "Braun, Simon, Mihaela Enculescu, Samarth T. Setty, Mariela Cortés-López, Bernardo P. de Almeida, FX Reymond Sutandy, Laura Schulz, Anke Busch, Markus Seiler, Stefanie Ebersberger, Nuno L Barbosa-Morais, Stefan Legewie, Julian König, Kathi Zarnack"
             date = "2018"
-            journal = "Journal of Field 52 (16), 9033-9044"
-            link = "#"
+            journal = "Nature communications 9 (1), 1-18"
+            link = "https://doi.org/10.1038/s41467-018-05748-7"
             type = "Journal Articles"
 
         [[params.publication.list]]
-            title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            authors = "F Last, F Second, P secondary"
+            title = "Global accumulation of circRNAs during aging in Caenorhabditis elegans"
+            authors = "Cortés-López, Mariela, Matthew R. Gruner, Daphne A. Cooper, Hannah N. Gruner, Alexandru-Ioan Voda, Alexander M. van der Linden, and Pedro Miura"
             date = "2018"
-            journal = "Journal of Field 52 (16), 9033-9044"
-            link = "#"
+            journal = "BMC genomics 19 (1), 1-12"
+            link = "https://doi.org/10.1186/s12864-017-4386-y"
             type = "Journal Articles"
 		
         [[params.publication.list]]
-            title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            authors = "F Last, F Second, P secondary"
+            title = "Genome-wide circRNA profiling from RNA-seq data"
+            authors = "Daphne A Cooper, Mariela Cortés-López, Pedro Miura"
             date = "2018"
-            journal = "Journal of Field 52 (16), 9033-9044"
-            link = "#"
-            type = "Proceedings"
+            journal = "Circular RNAs, 27-41"
+            link = "https://doi.org/10.1007/978-1-4939-7562-4_3"
+            type = "Book Chapters"
 
-    # Project section
-    [params.project]
-        title = "Projects"
-        icon = "fas fa-project-diagram"
-
-        [[params.project.list]]
-            title = "project"
-            url = "#"
-            description = "Description of the project"
-        [[params.project.list]]
-            title = "project"
-            url = "#"
-            description = "Description of the project"
-        [[params.project.list]]
-            title = "project"
-            url = "#"
-            description = "Description of the project"
-        [[params.project.list]]
-            title = "project"
-            url = "#"
-            description = "Description of the project"            
-
-    # Skill section
-    [params.skill]
-        title = "Skills"
-        panelId = "skill-panel"
-        icon = "fas fa-cogs"
-
-        [[params.skill.list]]
-            skill = "Skill 1, Skill 2"
-            skillrating = 90
-        [[params.skill.list]]
-            skill = "Skill 3"
-            skillrating = 80
-        [[params.skill.list]]
-            skill = "Skill 4"
-            skillrating = 50
-
+        [[params.publication.list]]
+            title = "Loss of adult skeletal muscle stem cells drives age-related neuromuscular junction degeneration"
+            authors = "Liu, Wenxuan, Alanna Klose, Sophie Forman, Nicole D. Paris, Lan Wei-Lapierre, Mariela Cortés-López, Aidi Tan, Morgan Flaherty, Pedro Miura, Robert T. Dirksen, and Joe V. Chakkalakal"
+            date = "2017"
+            journal = "Elife 6, e26464"
+            link = "https://doi.org/10.7554/eLife.26464.001"
+            type = "Journal Articles"
+       
+        [[params.publication.list]]
+            title = "CircRNA accumulation in the aging mouse brain"
+            authors = "Gruner, Hannah, Mariela Cortés-López, Daphne A. Cooper, Matthew Bauer, and Pedro Miura"
+            date = "2016"
+            journal = "Scientific reports 6, 38907"
+            link = "https://doi.org/10.1038/srep38907"
+            type = "Journal Articles"
+       
+        [[params.publication.list]]
+            title = "Focus: epigenetics: emerging functions of circular RNAs"
+            authors = "Cortés-López, Mariela, and Pedro Miura"
+            date = "2016"
+            journal = "Yale J Biol Med. 2016 Dec 23;89(4):527-537.eCollection 2016 Dec."
+            link = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5168830/"
+            type = "Reviews"
+            
     # Hobby section
     [params.hobby]
         title = "Hobbies"
         icon = "fas fa-gamepad"
 		
         [[params.hobby.list]]		
-		    hobby = "Cooking"
+		    hobby = "Reading"
         [[params.hobby.list]]		
 		    hobby = "Hiking"
         [[params.hobby.list]]		
-		    hobby = "Baking"
+		    hobby = "Learning German"
